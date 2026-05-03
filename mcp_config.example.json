@@ -1,0 +1,36 @@
+
+
+
+
+{
+  "mcpServers": {
+    "built-in": {
+      "url": "http://localhost:8000/mcp",
+      "enabled": true,
+      "description": "Default ReAct agent tools (file ops, bash, search, web, charts)"
+    },
+
+    "_example_stdio_server": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/directory"],
+      "enabled": false,
+      "description": "Example: MCP filesystem server via npx (stdio transport)"
+    },
+
+    "_example_http_server": {
+      "url": "http://localhost:9000/mcp",
+      "enabled": false,
+      "description": "Example: Custom MCP server via HTTP"
+    },
+
+    "_example_python_server": {
+      "command": "python",
+      "args": ["my_custom_server.py"],
+      "env": {
+        "MY_API_KEY": "your-key-here"
+      },
+      "enabled": false,
+      "description": "Example: Python MCP server (stdio transport)"
+    }
+  }
+}

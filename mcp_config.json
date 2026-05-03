@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "built-in": {
+      "url": "http://localhost:8000/mcp",
+      "enabled": true,
+      "description": "Default ReAct agent tools (file ops, bash, search, web, charts)"
+    }
+  }
+}
